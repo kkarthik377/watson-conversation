@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Clever Chat Widget IFrame</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   </head>
+  <body id="cc-cleanslate">
+   <div id="main-container" class="main-container">
+      <div data-reactroot="" class="widget-wrapper">
+         <div class="widget-container">
+             <div id="cc-chat-badge">
+            </div>
+            <div id="cc-chat-window" class="cc-chat-window" style="display: none">
+               <div class="cc-title-bar " id="cc-title-bar" style="background-color: rgb(74, 74, 74);">
+                  <div class="cc-title-bar-handler">
+                     <!--<img class="cc-title-bar-icon" id="cc-title-bar-icon" alt="" src="./images/default-bubble.svg">-->
+                     <h2 class="cc-title"><span class="cc-title-text" style="color: rgb(255, 255, 255);">Live Chat</span></h2>
+                  </div>
+                  <div class="cc-icon-container cc-title-options" id="cc-window-close">
+                      <img class="cc-title-close" id="cc-title-bar-icon" alt="" src="./images/close.png">
+                  </div>
+               </div>
+               <div id="cc-userinfo-page" class="cc-body-container" style="background-color: rgb(255, 254, 255);">
+                   <div class='error-userinfo-page' style='display:none; bottom: 85px!important; margin-left: -105px !important;'>Please check your internet connection</div>
+                  <div class="cc-background-container">
+                     <div class="cc-initial-info cc-page">
+                        <div class="cc-welcome-block">
+                           <p class="cc-welcome-message cc-break-word" style="color: rgb(42, 32, 17);">Welcome to Clever Chat. We are here to help you with all the questions you have.</p>
+                        </div>
+                        <form class="cc-form" novalidate="" id="form-user">
+                           <fieldset class="cc-material-input"><input type="text" name="name" id="cc-username" autocomplete="off" required="" value="" style="color: rgb(42, 32, 17); border-color: rgb(42, 32, 17);"><span class="input-highlight"></span><span class="bar"></span><label for="name" style="color: rgb(42, 32, 17);">Your Name</label><span class="cc-validate-name cc-error" style="display:none">Please enter your name</span></fieldset>
+                           <fieldset class="cc-material-input"><input type="text" name="email" id="cc-user-email" autocomplete="off" required="" value="" style="color: rgb(42, 32, 17); border-color: rgb(42, 32, 17);"><span class="input-highlight"></span><span class="bar"></span><label for="email" style="color: rgb(42, 32, 17);">Your Email</label><span class="cc-validate-email cc-error cc-truncate" style="display:none">Please enter a valid email</span></fieldset>
+                           <button class="cc-start" type="submit">
+                              <span class="cc-start-text cc-truncate">Start Chat</span>
+                              <!--<div class="cc-icon-container cc-start-arrow" id="">
+                                 <svg width="11" height="12" viewBox="0 0 11 25" xmlns="http://www.w3.org/2000/svg">
+                                    <title>sendArrow</title>
+                                    <path d="M11 12.5L0 25V0z" fill="#4A4A4A" fill-rule="evenodd"></path>
+                                 </svg>
+                              </div>-->
+                           </button>
+                        </form>
+                        <div class="cc-footer-container"><a href="javascript:void(0)" target="_blank" class="cc-footer-text cc-referral-link">Powered by calibraint</a></div>
+                     </div>
+                     <span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+               </div>
+               <div id="cc-conversation-page" class="cc-body-container" style="display: none;">
+                  <div class="cc-background-container">
+                     <div style="height: 100%;">
+                        <div class="cc-conversation-view cc-page">
+                            <span></span>
+                            <div class='error' style='display:none'>Something went wrong please try again</div>
+                            <div class="cc-conversation ">
+                                
+                            </div>
+                            <div class="cc-reply-area">
+                            <span></span>
+                            <p class="cc-is-typing-status"></p>
+                            <form id="cc-form-conversation">
+                                <textarea class="cc-message" name="reply" rows="1" placeholder="Type your message here" style="overflow: hidden; word-wrap: break-word; height: 35px;"></textarea>
+                            </form>
+                            </div>
+                            <div class="cc-footer-container"><a href="javascript:void(0)" target="_blank" class="cc-referral-link"><span class="cc-footer-text">Powered by calibraint</span></a></div>
+                        </div>
+                        <span></span>
+                    </div>
+                     <span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <!--<audio>
+                  <source src="/sounds/visitor/new-agent-message.mp3" type="audio/mpeg">
+               </audio>
+               <audio>
+                  <source src="/sounds/visitor/proactive-chat.mp3" type="audio/mpeg">
+               </audio>-->
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./jquery.min.js"></script>
+   <script src="./widget.js"></script>
+   <link type="text/css" rel="stylesheet" href="./css/embed.css">
+</body>
+</html>

@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Sample Bot
+  body(style='background: beige;')
+    h1(style='text-align: center;') WELCOME TO CHATBOT
+  script.
+    window.CCHAT_CONFIG = {
+          EMBED_TOKEN: "f0a3dc1f865a4b349a11b78282c2ab0f",
+          HOST_URL: "http://localhost:3000/"
+      };
+      (function() {
+        var scriptTag = document.createElement('script');
+        scriptTag.type = 'text/javascript';
+        scriptTag.async = true;
+        scriptTag.src = window.CCHAT_CONFIG.HOST_URL + 'assets/bots/widget-loader.js';
+
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(scriptTag, s);
+      })();

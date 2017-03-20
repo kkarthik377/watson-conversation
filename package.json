@@ -1,0 +1,20 @@
+{
+  "name": "watson-conversation",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "lodash": "^4.17.4",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2",
+    "watson-developer-cloud": "^2.27.0"
+  }
+}
