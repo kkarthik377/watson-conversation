@@ -211,7 +211,7 @@ function userChat(msg) {
 
 function replyMsg(msg, newmsg = false) {
     $(".cc-quote-timestamp").remove();
-    var html = '<div style="padding: 0px 0px 0px 10px;font-size: 10px;color: #A9A9A9;clear: both;">Gust</div>';
+    var html = '<div style="padding: 0px 0px 0px 10px;font-size: 10px;color: #A9A9A9;clear: both;">Demo Bot</div>';
     for (var i = 0; i < msg.length; i++) {
         html += '<div class="cc-quote-container agent new-quote" title="' + new Date() + '">';
         html += '<div>';

@@ -278,7 +278,7 @@ function injectIframe() {
 
 function getConfiguration() {
     return new Promise(function(resolve, reject) {
-        window.CCHAT_CONFIG.API_URL = "http://localhost:3000/chatbot/";
+        window.CCHAT_CONFIG.API_URL = "http://ec2-52-72-115-113.compute-1.amazonaws.com:3000/chatbot/";
         window.CCHAT_CONFIG.CONFIG = {
             "name": "ZEB",
             "appearance": {
